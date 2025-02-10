@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking | TembeaKenya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Root Variables */
+:root {
+  --primary-color: #1D4ED8; /* Royal Blue */
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --extra-light: #f2f2f2;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --gradient: linear-gradient(to bottom, #ffffff, #ffffff);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--extra-light);
+    color: var(--text-dark);
+}
+
+/* Header Styles */
+header {
+    background: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav__logo a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Booking Section */
+.booking {
+    background: var(--white);
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking h2 {
+    text-align: center;
+    color: var(--text-dark);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: var(--text-light);
+    margin: 10px 0 5px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background: var(--extra-light);
+    color: var(--text-dark);
+}
+
+/* Button Styles */
+.btn-rent {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-rent:hover {
+    background: #153b96; /* Darker shade of primary color */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html">TembeaKenya Cars</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="booking">
+        <h2>Book Your Car</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="car-select">Choose a Car:</label>
+            <select id="car-select" name="car">
+                <option value="Toyota Vitz">Toyota Vitz</option>
+                <option value="Toyota Prado">Toyota Prado</option>
+                <option value="Range Rover">Range Rover</option>
+                <option value="Mercedes Benz">Mercedes Benz</option>
+            </select>
+            
+            <label for="pickup-date">Pick-Up Date:</label>
+            <input type="date" id="pickup-date" name="pickup_date" required>
+            
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return_date" required>
+            
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <button type="submit" class="btn-rent">Confirm Booking</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 TembeaKenya | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

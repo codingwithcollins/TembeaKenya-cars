@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+        <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            /* Styles for the Our Cars Page */
+.our-cars {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-cars .section__subheader {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.our-cars .section__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.car-item {
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover {
+  transform: translateY(-10px);
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 1rem;
+}
+
+.car-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.car-description {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.car-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--price-color);
+  margin-bottom: 1rem;
+}
+
+.btn-rent {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rent:hover {
+  background-color: var(--hover-color);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--footer-bg);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  color: #fff;
+}
+
+.social-media-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+        </style>
+        <title>TembeaKenya cars</title>
+      </head>
+      <body>
+        <header>
+          <nav>
+            <div class="nav__header">
+              <div class="nav__logo">
+                <a href="#">TembeaKenya Cars</a>
+              </div>
+              <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+              </div>
+            </div>
+            
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Our Cars</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                
+              <li class="nav__links__btn"><a href="#" class="btn btn__primary">Sign Up</a></li>
+              <li class="nav__links__btn"><a href="#" class="btn btn__secondary">Sign In</a></li>
+            </ul>
+        
+            <div class="nav__btns">
+              <a href="#" class="btn btn__primary">Sign Up</a>
+              <a href="#" class="btn btn__secondary">Sign In</a>
+            </div>
+          </nav>
+        
+          
+        </header>
+    <!-- Our Cars Section -->
+    <section class="our-cars">
+        <p class="section__subheader">Available Cars for Rent</p>
+        <h2 class="section__header">Our Fleet</h2>
+
+        <div class="car-grid">
+           <!-- Car 5 -->
+<div class="car-item">
+    <img src="assets/cars/toyota_vitz.png" alt="Ford F-150" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Ford F-150</h3>
+        <p class="car-description">A rugged pickup truck with powerful towing capacity and ample cargo space.</p>
+        <p class="car-price">From Ksh 18,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 6 -->
+<div class="car-item">
+    <img src="assets/cars/toyota_vitz.png" alt="Honda Civic" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Honda Civic</h3>
+        <p class="car-description">A sleek and efficient compact car perfect for daily commuting.</p>
+        <p class="car-price">From Ksh 5,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 7 -->
+<div class="car-item">
+    <img src="assets/cars/toyota_vitz.png" alt="BMW X5" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">BMW X5</h3>
+        <p class="car-description">A luxury SUV with a perfect blend of performance and comfort.</p>
+        <p class="car-price">From Ksh 22,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 8 -->
+<div class="car-item">
+    <img src="assets/cars/toyota_vitz.png" alt="Audi Q7" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Audi Q7</h3>
+        <p class="car-description">A sophisticated SUV with advanced technology and premium features.</p>
+        <p class="car-price">From Ksh 20,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 9 -->
+<div class="car-item">
+    <img src="assets/cars/mazda_3.jpg" alt="Mazda 3" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Mazda 3</h3>
+        <p class="car-description">A stylish sedan offering excellent fuel efficiency and a smooth drive.</p>
+        <p class="car-price">From Ksh 6,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 10 -->
+<div class="car-item">
+    <img src="assets/cars/nissan_xtrail.jpg" alt="Nissan X-Trail" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Nissan X-Trail</h3>
+        <p class="car-description">A reliable SUV with a spacious interior and advanced safety features.</p>
+        <p class="car-price">From Ksh 10,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 11 -->
+<div class="car-item">
+    <img src="assets/cars/toyota_land_cruiser.jpg" alt="Toyota Land Cruiser" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Toyota Land Cruiser</h3>
+        <p class="car-description">A legendary 4x4 SUV, ideal for off-road adventures and long trips.</p>
+        <p class="car-price">From Ksh 20,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 12 -->
+<div class="car-item">
+    <img src="assets/cars/hyundai_tucson.jpg" alt="Hyundai Tucson" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Hyundai Tucson</h3>
+        <p class="car-description">A versatile and efficient compact SUV, perfect for city and rural driving.</p>
+        <p class="car-price">From Ksh 9,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 13 -->
+<div class="car-item">
+    <img src="assets/cars/mercedes_s_class.jpg" alt="Mercedes S-Class" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Mercedes S-Class</h3>
+        <p class="car-description">A luxury sedan offering unparalleled comfort, performance, and prestige.</p>
+        <p class="car-price">From Ksh 30,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 14 -->
+<div class="car-item">
+    <img src="assets/cars/jeep_wrangler.jpg" alt="Jeep Wrangler" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Jeep Wrangler</h3>
+        <p class="car-description">An off-road powerhouse with rugged features and a thrilling driving experience.</p>
+        <p class="car-price">From Ksh 18,500/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 15 -->
+<div class="car-item">
+    <img src="assets/cars/volkswagen_golf.jpg" alt="Volkswagen Golf" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Volkswagen Golf</h3>
+        <p class="car-description">A practical and stylish hatchback, great for city driving and daily use.</p>
+        <p class="car-price">From Ksh 7,500/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 16 -->
+<div class="car-item">
+    <img src="assets/cars/lexus_rx.jpg" alt="Lexus RX" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Lexus RX</h3>
+        <p class="car-description">A luxury SUV with a smooth ride and high-end features, perfect for family trips.</p>
+        <p class="car-price">From Ksh 25,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 17 -->
+<div class="car-item">
+    <img src="assets/cars/tesla_model_s.jpg" alt="Tesla Model S" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Tesla Model S</h3>
+        <p class="car-description">An electric luxury sedan with cutting-edge technology and unparalleled performance.</p>
+        <p class="car-price">From Ksh 40,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 18 -->
+<div class="car-item">
+    <img src="assets/cars/fiat_500.jpg" alt="Fiat 500" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Fiat 500</h3>
+        <p class="car-description">A small and stylish city car, perfect for short trips and urban driving.</p>
+        <p class="car-price">From Ksh 4,500/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 19 -->
+<div class="car-item">
+    <img src="assets/cars/subaru_outback.jpg" alt="Subaru Outback" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Subaru Outback</h3>
+        <p class="car-description">A versatile SUV with excellent off-road capabilities and a comfortable ride.</p>
+        <p class="car-price">From Ksh 10,500/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 20 -->
+<div class="car-item">
+    <img src="assets/cars/peugeot_3008.jpg" alt="Peugeot 3008" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Peugeot 3008</h3>
+        <p class="car-description">A stylish and practical SUV, offering great fuel efficiency and a smooth ride.</p>
+        <p class="car-price">From Ksh 8,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 21 -->
+<div class="car-item">
+    <img src="assets/cars/mini_cooper.jpg" alt="Mini Cooper" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Mini Cooper</h3>
+        <p class="car-description">A compact and fun-to-drive car with a distinctive style and performance.</p>
+        <p class="car-price">From Ksh 7,500/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 22 -->
+<div class="car-item">
+    <img src="assets/cars/land_rover_discovery.jpg" alt="Land Rover Discovery" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Land Rover Discovery</h3>
+        <p class="car-description">A powerful 4x4 vehicle that combines luxury and off-road capability.</p>
+        <p class="car-price">From Ksh 27,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 23 -->
+<div class="car-item">
+    <img src="assets/cars/porsche_911.jpg" alt="Porsche 911" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Porsche 911</h3>
+        <p class="car-description">An iconic sports car offering speed, luxury, and performance.</p>
+        <p class="car-price">From Ksh 50,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 24 -->
+<div class="car-item">
+    <img src="assets/cars/volvo_xc90.jpg" alt="Volvo XC90" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Volvo XC90</h3>
+        <p class="car-description">A luxury SUV offering a perfect blend of comfort, safety, and technology.</p>
+        <p class="car-price">From Ksh 23,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 25 -->
+<div class="car-item">
+    <img src="assets/cars/ford_mustang.jpg" alt="Ford Mustang" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Ford Mustang</h3>
+        <p class="car-description">A classic American muscle car with powerful performance and striking design.</p>
+        <p class="car-price">From Ksh 35,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+<!-- Car 26 -->
+<div class="car-item">
+    <img src="assets/cars/chevrolet_camaro.jpg" alt="Chevrolet Camaro" class="car-image">
+    <div class="car-info">
+        <h3 class="car-name">Chevrolet Camaro</h3>
+        <p class="car-description">A high-performance sports car with bold styling and speed.</p>
+        <p class="car-price">From Ksh 32,000/day</p>
+        <button class="btn-rent">Rent Now</button>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 TembeaKenya | All Rights Reserved</p>
+            <ul class="social-media-links">
+                <li><a href="#" class="social-icon">Facebook</a></li>
+                <li><a href="#" class="social-icon">Twitter</a></li>
+                <li><a href="#" class="social-icon">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Example JavaScript to handle "Rent Now" buttons
+document.querySelectorAll('.btn-rent').forEach(button => {
+    button.addEventListener('click', () => {
+        window.location.href = 'booking.html'; // Redirect to booking page or open modal
+    });
+});
+
+    </script></body>
+</html>
